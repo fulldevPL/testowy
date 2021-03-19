@@ -6,7 +6,7 @@ const app = express();
 // Podłącznie do Mongo
 connectDB();
 
-// Init Middleware
+// Inicjowanie Middleware
 app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => {
