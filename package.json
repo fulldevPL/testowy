@@ -4,10 +4,14 @@
   "description": "Kontakty",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server.js"
+    "start": "mode server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run client \""
   },
   "keywords": [],
-  "author": "",
+  "author": "Maciej Szeremeta",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
